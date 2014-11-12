@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/dorder_no"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:text="ORDER NO"
+         android:textAppearance="?android:attr/textAppearanceMedium" 
+          />
+    
+    <TextView
+        android:id="@+id/ddate"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:text="DATE" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+          />
+
+    <TextView
+        android:id="@+id/dtable_no"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TABLE NO" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />
+
+   
+
+   
+
+    <TextView
+        android:id="@+id/dwaiter_name"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="WAITER NAME" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />
+    <TextView
+        android:id="@+id/ditem_name"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="ITEM NAME" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />
+    
+
+    <TextView
+        android:id="@+id/dtotal_amount"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TOTAL AMOUNT" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />
+
+    <TextView
+        android:id="@+id/dreason"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="REASON" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />
+     <TextView
+        android:id="@+id/dnote"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="NOTE" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />    
+
+</LinearLayout>

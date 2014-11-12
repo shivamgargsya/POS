@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d85646"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:text="VIEW RETURNED ORDERS"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="View all the returned orders"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.22"
+        android:background="#f4e5d0"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/cusname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="left" >
+
+                        <TextView
+                            android:id="@+id/tvInfoCusName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:text="Table Number : "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/sVROTableNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_toRightOf="@+id/tvInfoCusName"
+                            android:background="@drawable/edittext_selectr"
+                            android:paddingLeft="8dp" >
+                        </Spinner>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cusmobile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:gravity="right" >
+
+                        <TextView
+                            android:id="@+id/tvInfoCusMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:text="Date :"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sVRODate"
+                            style="@android:style/Widget.Holo.Spinner"
+                            android:layout_width="249dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tvInfoCusMobile"
+                            android:background="@drawable/edittext_selectr"
+                            android:paddingLeft="8dp"
+                            android:text="dd/mm/yyyy"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left" >
+
+                        <TextView
+                            android:id="@+id/tvInfoTableNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:text="Waiter Name :"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/sVROWaiterName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/tvInfoTableNo"
+                            android:background="@drawable/edittext_selectr"
+                            android:hint="Enter Phone Number"
+                            android:paddingLeft="8dp" >
+                        </Spinner>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right" >
+
+                        <TextView
+                            android:id="@+id/tvDiscountPerc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:text="Reason :"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/sVROReason"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="18dp"
+                            android:layout_toRightOf="@+id/tvDiscountPerc"
+                            android:background="@drawable/edittext_selectr"
+                            android:paddingLeft="8dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <Button
+                            android:id="@+id/bVROSearch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttonx"
+                            android:text="Search" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <Button
+                            android:id="@+id/bVROBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttonx"
+                            android:text="Back to Return Orders" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/bl"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/horiline" />
+                <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:id="@+id/head"
+    android:layout_below="@+id/line"
+    android:gravity="center">"
+	<TextView
+        android:id="@+id/rorder_no"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:text="ORDER NO"
+         android:textAppearance="?android:attr/textAppearanceMedium" 
+          android:background="#d0bfa1"/>
+    
+    <TextView
+        android:id="@+id/rdate"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:text="DATE" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+          android:background="#d0bfa1"/>
+
+    <TextView
+        android:id="@+id/rtable_no"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TABLE NO" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          android:background="#d0bfa1"/>
+
+   
+
+   
+
+    <TextView
+        android:id="@+id/rwaiter_name"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="WAITER NAME" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          android:background="#d0bfa1"/>
+   
+    
+
+    <TextView
+        android:id="@+id/rtotal_amount"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TOTAL AMOUNT" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          android:background="#d0bfa1"/>
+
+    <TextView
+        android:id="@+id/rreason"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="REASON" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          android:background="#d0bfa1"/>
+     <TextView
+        android:id="@+id/rnote"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="NOTE" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          android:background="#d0bfa1"/>    
+
+</LinearLayout>
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/line"
+                    android:layout_below="@+id/head" >
+                </ListView>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

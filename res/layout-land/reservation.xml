@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d85646"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:text="RESERVATION"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Reservation for Tables"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="0.25"
+        android:background="#f4e5d0"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvInfoReserveNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="8dp"
+                        android:layout_margin="8dp"
+                        android:text="Reserve No. :"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvReserveNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvInfoReserveNo"
+                        android:layout_alignBottom="@+id/tvInfoReserveNo"
+                        android:layout_toRightOf="@+id/tvInfoReserveNo"
+                        android:background="#d0bfa1"
+                        android:padding="8dp"
+                        android:text="001"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/tvInfoDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="8dp"
+                        android:layout_margin="8dp"
+                        android:text="Date : "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvInfoDate"
+                        android:layout_alignBottom="@+id/tvInfoDate"
+                        android:layout_toRightOf="@+id/tvInfoDate"
+                        android:background="#d0bfa1"
+                        android:padding="8dp"
+                        android:text="dd/mm/yyyy"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:id="@+id/tvInfoTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="8dp"
+                        android:text="Time : "
+                        android:layout_margin="8dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvInfoTime"
+                        android:layout_alignBottom="@+id/tvInfoTime"
+                        android:layout_toRightOf="@+id/tvInfoTime"
+                        android:background="#d0bfa1"
+                        android:padding="8dp"
+                        android:layout_marginRight="10dp"
+                        android:text="04:00 PM"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m"
+                android:layout_below="@+id/t"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/cusname"
+                    android:layout_marginRight="8dp"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/tvInfoCusName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="8dp"
+                        android:text="Customer Name : "
+                        android:layout_margin="8dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etCusName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvInfoCusName"
+                        android:layout_alignBottom="@+id/tvInfoCusName"
+                        android:layout_toRightOf="@+id/tvInfoCusName"
+                        android:background="@drawable/edittext_selectr"
+                        android:hint="Enter Name"
+                        android:paddingLeft="8dp" >
+                    </EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cusmobile"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/tvInfoCusMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="8dp"
+                        android:layout_margin="8dp"
+                        android:text="Phone Number :"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etCusMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvInfoCusMobile"
+                        android:layout_alignBottom="@+id/tvInfoCusMobile"
+                        android:layout_toRightOf="@+id/tvInfoCusMobile"
+                        android:background="@drawable/edittext_selectr"
+                        android:hint="Enter Name"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="8dp" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/b"
+                android:layout_below="@+id/m"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+               <RelativeLayout 
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="left">
+                <TextView
+                        android:id="@+id/tvInfoTableNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="8dp"
+                        android:layout_margin="8dp"
+                        android:text="Table Number :"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sTableNo"
+                    android:layout_toRightOf="@+id/tvInfoTableNo"
+                    android:layout_width="149dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edittext_selectr"
+                    android:layout_marginLeft="8dp" />
+
+                <Button 
+                    android:id="@+id/bRefresh"
+                    android:layout_toRightOf="@+id/sTableNo"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Refresh"
+                    android:background="@drawable/buttonx"/>
+                </RelativeLayout>
+                <RelativeLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right">
+                    <Button 
+                        android:padding="8dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/bViewReservationList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Reservation List"
+                        android:background="@drawable/buttonx"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView 
+                android:id="@+id/line"
+                android:layout_below="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/horiline"/>
+            <RelativeLayout 
+                android:id="@+id/tt"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button 
+                    android:id="@+id/bUpdate"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/buttonx"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="UPDATE"/>
+
+                <Button
+                    android:id="@+id/bSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonx"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="40dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:layout_toLeftOf="@+id/bUpdate"
+                    android:text="SAVE" />
+
+                <Button
+                    android:id="@+id/bClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonx"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="41dp"
+                    android:layout_toRightOf="@+id/bUpdate"
+                    android:text="CLEAR" />
+                
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+
+</LinearLayout>

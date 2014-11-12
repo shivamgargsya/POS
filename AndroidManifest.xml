@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dhsit.pos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.dhsit.pos.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.ActivityMain"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.CustomerBill"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ActivityMain"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.DeleteItems"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.CustomerBill"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.Reservation"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ActivityMain"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.ViewDeleteItem"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.DeleteItems"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.ViewReservation"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.Reservation"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.Bill"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ActivityMain"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.ReturnOrders"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ActivityMain"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.ViewReturnOrders"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ReturnOrders"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.AddMenuItem"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ActivityMain"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.TableStructure"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ActivityMain"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.AssignTable"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ActivityMain"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.dhsit.pos.Reports"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ActivityMain"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+         <activity
+            android:name="com.dhsit.pos.add_waiter"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dhsit.pos.ActivityMain"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+       
+    </application>
+
+</manifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:id="@+id/head">"
+	<TextView
+        android:id="@+id/rorder_no"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:text="ORDER NO"
+         android:textAppearance="?android:attr/textAppearanceMedium" 
+          />
+    
+    <TextView
+        android:id="@+id/rdate"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:padding="7dp"
+        android:layout_height="wrap_content"
+        android:text="DATE" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+          />
+
+    <TextView
+        android:id="@+id/rtable_no"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TABLE NO" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="9dp"
+          />
+
+   
+
+   
+
+    <TextView
+        android:id="@+id/rwaiter_name"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="WAITER NAME" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />
+    
+
+    <TextView
+        android:id="@+id/rtotal_amount"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TOTAL AMOUNT" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />
+
+    <TextView
+        android:id="@+id/rreason"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="REASON" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />
+     <TextView
+        android:id="@+id/rnote"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="NOTE" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="8dp"
+          />  
+</LinearLayout>

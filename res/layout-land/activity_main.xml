@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d65045"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bReservations"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/menub_selctr"
+            android:text="Reservations" />
+
+        <Button
+            android:id="@+id/bBills"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/menub_selctr"
+            android:text="Bills" />
+
+        <Button
+            android:id="@+id/bReturnOrders"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/menub_selctr"
+            android:text="Return Orders" />
+
+        <Button
+            android:id="@+id/bAssignTable"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/menub_selctr"
+            android:text="Assign Tables\nTo Waiters" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bCustomerBill"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/menub_selctr"
+            android:text="Customer Bill" />
+
+        <Button
+            android:id="@+id/bTodaysBills"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/menub_selctr"
+            android:text="Today&apos;s Bills" />
+
+        <Button
+            android:id="@+id/bDeletedItemsList"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/menub_selctr"
+            android:text="Deleted Items List" />
+
+        <Button
+            android:id="@+id/bAddMenuItem"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/menub_selctr"
+            android:text="Add Menu Items" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

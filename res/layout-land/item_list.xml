@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/ilname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10" 
+         android:background="@drawable/edittext_selectr"
+        android:hint="Name"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"/>
+
+    
+
+    <EditText
+        android:id="@+id/ilquantity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+         android:background="@drawable/edittext_selectr"
+        android:hint="Quantity"
+      android:layout_marginRight="8dp"
+      android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/iltable_no"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+         android:background="@drawable/edittext_selectr"
+        android:hint="Unit price" 
+         android:layout_marginRight="8dp"
+         android:padding="8dp"/>
+    <TextView
+        android:id="@+id/ilprice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10" 
+         android:background="@drawable/edittext_selectr"
+        android:hint="Total Price"
+         android:layout_marginRight="8dp"
+         android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+   
+
+    <Button
+        android:id="@+id/edit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/buttonx"
+        android:text="Edit"
+         android:layout_marginRight="8dp"
+         android:padding="8dp"/>
+
+     <ImageButton
+         android:id="@+id/delete"
+         android:layout_width="50dp"
+         android:layout_height="45dp"
+         android:layout_marginRight="8dp"
+         android:background="@drawable/bdelete"
+         android:padding="8dp" />
+
+      </LinearLayout>
+
+</LinearLayout>

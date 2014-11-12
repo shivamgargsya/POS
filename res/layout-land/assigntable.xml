@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d85646"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:text="ASSIGN TABLES"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Assign Tables to a Particular Waiter"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.22"
+        android:background="#f4e5d0"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <LinearLayout
+                android:id="@+id/t"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvInfoReserveNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="8dp"
+                        android:layout_margin="8dp"
+                        android:text="Waiter ID :"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/sATWaiterID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_toRightOf="@+id/tvInfoReserveNo"
+                        android:background="@drawable/edittext_selectr"
+                        android:padding="6dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/tvInfoDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="8dp"
+                        android:layout_margin="8dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:text="Waiter Name : "
+                         />
+
+                    <Spinner
+                        android:id="@+id/sATWaiterName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_toRightOf="@+id/tvInfoDate"
+                        android:background="@drawable/edittext_selectr"
+                        android:padding="6dp"
+                        
+                         />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:id="@+id/tvInfoTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="8dp"
+                        android:text="Date : "
+                        android:layout_margin="8dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvATDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvInfoTime"
+                        android:layout_alignBottom="@+id/tvInfoTime"
+                        android:layout_toRightOf="@+id/tvInfoTime"
+                        android:background="#d0bfa1"
+                        android:padding="6dp"
+                        android:layout_marginRight="18dp"
+                        android:text="dd/mm/yyyy"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView 
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/t"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/horiline"/>
+            <LinearLayout 
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/line1"
+                android:layout_marginTop="5dp">
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                          android:id="@android:id/list"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                    
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical|center_horizontal">
+                    <Button 
+                        android:id="@+id/bATAssign"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="ASSIGN"
+                        android:background="@drawable/buttonx"/>
+                    <Button 
+                        android:id="@+id/bATUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="UPDATE"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/buttonx"/>
+                    <Button 
+                        android:id="@+id/bATClear"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="CLEAR"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/buttonx"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
